@@ -1,0 +1,377 @@
+header {
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 1px 3px rgba(16, 24, 40, .1);
+    display: flex;
+    align-items: center;
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 3rem;
+        align-items: center;
+
+        .leftNav {
+            img {
+                height: 100%;
+                width: 200px;
+            }
+        }
+
+        .rightNav {
+            .rightNavItem {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                .cartSpan{
+                    position: relative;
+                    .cartVal{
+                        position: absolute;
+                        background: #5858E0;
+                        right: -15px;
+                        top: -11px;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        color: #fff;
+                        justify-content: center;
+                        border-radius: 50%;
+                    }
+                }
+
+                span {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: #101043;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: #5858E0;
+                    }
+
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    padding: 1rem 2rem;
+                    background-color: #5858E0;
+                    color: #fff;
+                    border-radius: .7rem;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        background-color: #6565e2;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+//sidebar cart
+.rightH {
+    right: -100%;
+}
+
+.rightT {
+    right: 0;
+}
+.totalPurchase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2rem;
+
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .totalAmount {
+        color: #5858E0;
+        font-size: 14px;
+    }
+
+    button {
+        border: none;
+        display: flex;
+        align-items: center;
+        outline: none;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        background-color: #5858E0;
+        color: #fff;
+        border-radius: .5rem;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: 600;
+        gap: 0.3rem;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            background-color: #6565e2;
+        }
+    }
+}
+.cartItems {
+    overflow-y: auto;
+    max-height: 300px;
+
+    
+
+    .orders {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        padding: 2rem;
+        margin: .5rem 0;
+
+        .orderR {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            svg{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            p {
+                color: #5858E0 !important;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+
+    }
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    top: 0;
+    opacity: 0.99;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 999999;
+    transition: all 0.5s cubic-bezier(.79, .14, .15, .86);
+
+    .backBtn {
+        cursor: pointer;
+
+        &:hover {
+            color: #5858E0;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin: 2rem;
+        }
+    }
+
+    .cart {
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .emptyCart {
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .wallet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                font-size: 25px;
+                color: #000;
+
+                span {
+                    color: #5858E0;
+                }
+            }
+
+            svg {
+                width: 70px;
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+//home page css
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    img {
+        width: 40px;
+        height: 100%;
+    }
+}
+
+.refresh {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+
+    button {
+        border: none;
+        display: flex;
+        align-items: center;
+        outline: none;
+        justify-content: center;
+        padding: 1rem 2rem;
+        background-color: #5858E0;
+        color: #fff;
+        border-radius: .7rem;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: 600;
+        gap: 0.3rem;
+        transition: all 0.5s ease;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            background-color: #6565e2;
+        }
+    }
+}
+
+.section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .dataTable {
+        margin: 0 3rem;
+
+        .table {
+            width: 100%;
+
+            .table-dark {
+                background-color: #5858E0;
+                height: 45px;
+                color: #fff;
+                font-size: 1.4rem;
+                letter-spacing: 0.09em;
+                text-align: left;
+                margin-left: 2rem;
+
+                th {
+                    padding-left: 2rem;
+
+                }
+            }
+
+            #tbody {
+                .specialTd {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                input {
+                    border: none;
+                    outline: none;
+                    padding: 0.6rem;
+                    border-radius: 0.5rem;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                }
+
+                button {
+                    margin-left: 1rem;
+                    border: none;
+                    outline: none;
+                    padding: 0.6rem;
+                    border-radius: 0.5rem;
+                    color: #5858E0;
+                    background-color: #fff;
+                    display: flex;
+                    gap: 0.5rem;
+                    align-items: center;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #5858E0;
+                    }
+
+                }
+
+                tr {
+                    height: 45px;
+
+                    &:nth-child(even) {
+                        background-color: #F6F6F6;
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #fff;
+                    }
+                }
+
+                td {
+                    font-size: 1.4rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+//responsive
+@media(max-width:500px){
+    .sidebar{
+
+    width: 350px!important;}
+}
+
+

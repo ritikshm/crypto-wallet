@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Sans&family=Fira+Sans&family=Josefin+Sans:ital@1&family=Kanit:wght@300&family=Oleo+Script+Swash+Caps&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family:'Roboto', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+
+@media (max-width:1000px){
+  html{
+    font-size: 52.5%;
+  }
+}
+@media (max-width:750px){
+  html{
+    font-size: 50.5%;
+  }
+  header .navbar .leftNav img {
+    height: 100%;
+    width: 154px!important;
+}
+.section .dataTable .table #tbody .hideAdd {
+  display: none!important;
+}
+}
+@media (max-width:600px){
+  html{
+    font-size: 45.5%;
+  }
+  header .navbar .rightNav .rightNavItem .spanHide{
+    display: none!important;
+  }
+}
+@media (max-width:550px){
+
+  html{
+    font-size: 40.5%;
+  }
+  header .navbar .rightNav .rightNavItem .spanHide{
+    display: none!important;
+  }
+  header .navbar .rightNav .rightNavItem{
+    margin-right: 20px!important;
+  }
+}
+@media (max-width:500px){
+  header .navbar .leftNav img {
+    height: 100%;
+    width: 134px!important;
+}
+.section .dataTable .table #tbody input {
+  width: 100px!important;
+}
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5858E0;
+  border-radius: 100px;
+}

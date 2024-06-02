@@ -1,0 +1,317 @@
+header {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(16, 24, 40, 0.1);
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  align-items: center;
+}
+header .navbar .leftNav img {
+  height: 100%;
+  width: 200px;
+}
+header .navbar .rightNav .rightNavItem {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+header .navbar .rightNav .rightNavItem .cartSpan {
+  position: relative;
+}
+header .navbar .rightNav .rightNavItem .cartSpan .cartVal {
+  position: absolute;
+  background: #5858E0;
+  right: -15px;
+  top: -11px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  border-radius: 50%;
+}
+header .navbar .rightNav .rightNavItem span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #101043;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header .navbar .rightNav .rightNavItem span:hover {
+  color: #5858E0;
+}
+header .navbar .rightNav .rightNavItem span svg {
+  width: 2rem;
+  height: 2rem;
+}
+header .navbar .rightNav .rightNavItem button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #5858E0;
+  color: #fff;
+  border-radius: 0.7rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+header .navbar .rightNav .rightNavItem button:hover {
+  background-color: #6565e2;
+}
+
+.rightH {
+  right: -100%;
+}
+
+.rightT {
+  right: 0;
+}
+
+.totalPurchase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 2rem;
+}
+.totalPurchase p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.totalPurchase .totalAmount {
+  color: #5858E0;
+  font-size: 14px;
+}
+.totalPurchase button {
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: #5858E0;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  gap: 0.3rem;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+}
+.totalPurchase button svg {
+  width: 20px;
+  height: 20px;
+}
+.totalPurchase button:hover {
+  background-color: #6565e2;
+}
+
+.cartItems {
+  overflow-y: auto;
+  max-height: 300px;
+}
+.cartItems .orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 2rem;
+  margin: 0.5rem 0;
+}
+.cartItems .orders .orderR {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.cartItems .orders .orderR svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.cartItems .orders .orderR p {
+  color: #5858E0 !important;
+}
+.cartItems .orders p {
+  font-size: 14px;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 400px;
+  top: 0;
+  opacity: 0.99;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 999999;
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+.sidebar .backBtn {
+  cursor: pointer;
+}
+.sidebar .backBtn:hover {
+  color: #5858E0;
+}
+.sidebar .backBtn svg {
+  width: 20px;
+  height: 20px;
+  margin: 2rem;
+}
+.sidebar .cart {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebar .cart .emptyCart {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.sidebar .cart .emptyCart p {
+  font-size: 15px;
+}
+.sidebar .cart .wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.sidebar .cart .wallet p {
+  font-size: 25px;
+  color: #000;
+}
+.sidebar .cart .wallet p span {
+  color: #5858E0;
+}
+.sidebar .cart .wallet svg {
+  width: 70px;
+  height: 100%;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.loader img {
+  width: 40px;
+  height: 100%;
+}
+
+.refresh {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.refresh button {
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #5858E0;
+  color: #fff;
+  border-radius: 0.7rem;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  gap: 0.3rem;
+  transition: all 0.5s ease;
+}
+.refresh button svg {
+  width: 20px;
+  height: 20px;
+}
+.refresh button:hover {
+  background-color: #6565e2;
+}
+
+.section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.section .dataTable {
+  margin: 0 3rem;
+}
+.section .dataTable .table {
+  width: 100%;
+}
+.section .dataTable .table .table-dark {
+  background-color: #5858E0;
+  height: 45px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.09em;
+  text-align: left;
+  margin-left: 2rem;
+}
+.section .dataTable .table .table-dark th {
+  padding-left: 2rem;
+}
+.section .dataTable .table #tbody .specialTd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .dataTable .table #tbody input {
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.section .dataTable .table #tbody button {
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  color: #5858E0;
+  background-color: #fff;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.section .dataTable .table #tbody button:hover {
+  color: #fff;
+  background-color: #5858E0;
+}
+.section .dataTable .table #tbody tr {
+  height: 45px;
+}
+.section .dataTable .table #tbody tr:nth-child(even) {
+  background-color: #F6F6F6;
+}
+.section .dataTable .table #tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.section .dataTable .table #tbody td {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 45px;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 350px !important;
+  }
+}/*# sourceMappingURL=App.css.map */
